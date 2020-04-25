@@ -3,19 +3,52 @@
 <head>
 <meta charset="utf-8">
 <title>千里扯淡的个人主页!</title>
+<script src="https://cdn.staticfile.org/jquery/1.8.3/jquery.min.js">
+</script>
+<script>
+function sayhello()
+{
+	var timee = new Date();
+	var hour = timee.getHours();
+	console.log('现在的小时数:'+timee.getHours());
+	if (hour<23 && hour>17) {alert('欢迎!晚上好！'+' \n'+'当前时间:'+timee);}
+	else if (hour<17 && hour>12) {alert('欢迎!下午好！'+' \n'+'当前时间:'+timee);}
+	else if (hour<13 && hour>10) {alert('欢迎!中午好！'+' \n'+'当前时间:'+timee);}
+	else if (hour<11 && hour>0) {alert('欢迎!早上好！'+' \n'+'当前时间:'+timee);}
+}
+</script>
+<script>
+function yes()
+{
+	x=document.getElementById("text");
+	x.innerHTML = "这就对了！（*￣︶￣）";
+	console.log('ButtonClicked.');
+}
+function no()
+{
+	x=document.getElementById("text");
+	x.innerHTML = "给👨爪巴去三连!ψ(*｀ー´)ψ";
+	console.log('ButtonClicked.');
+}
+</script>
+<style type="text/css">
+.nounderline{text-decoration:none;}
+</style>
 </head>
-<body background="bg.webp" bgproperties="fixed" vlink="#66ccff" alink="#66ccff">
+<body background="bg.png" bgproperties="fixed" vlink="#ffffff" alink="#ffffff" style ="background-repeat:no-repeat;" onload="sayhello()">
 <nobr>
-<a href="index.html">主页&nbsp;&nbsp;</a>
-<a href="whoami.html">我&nbsp;是&nbsp;谁</a>
-<a href="https://space.bilibili.com/328578742" target="_blank">我的B站首页&nbsp;&nbsp;</a>
-<a href="https://github.com/QLchedan/" target="_blank">我的GitHub&nbsp;&nbsp;</a>
-<a href="fujiao.html">fujiao</a>
+<a href="index.html" class="nounderline"><b>主页&nbsp;&nbsp;</b></a>
+<a href="whoami.html" class="nounderline"><b>我&nbsp;是&nbsp;谁</b></a>
+<a href="https://space.bilibili.com/328578742" target="_blank" class="nounderline"><b>我的B站首页&nbsp;&nbsp;</b></a>
+<a href="https://github.com/QLchedan/" target="_blank" class="nounderline"><b>我的GitHub&nbsp;&nbsp;</b></a>
+<a href="fujiao.html" class="nounderline"><b>fujao</b></a>
+<font color="ffffff"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;千里扯淡的个人主页！</b></font>
 </nobr>
 <br>
 <b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b>
 <br>
 <b>我的测试环境是Windows10，Edge Beta（Chromium内核），其他浏览器我就不知道了</b>
+<br><br>
 <p>这是B站up千里扯淡的网站！</p>
 <p>我是练习C++两年半的个人练习生....（</p>
 <p>就闲着无聊把这个网站做上了，我HTML水平不怎么样（不过反正比我C#流弊一点）</p>
@@ -27,6 +60,10 @@
 <p><b>我B站首页</b></p>
 <p>↓</p>
 <p>（给我三连！赶紧的）</p>
+<br><br>
+<button type="button" onclick="yes()">三连了！</button>
+<button type="button" onclick="no()">不三连，给👨爪巴</button>
+<p id="text">233</p>
 <iframe src="https://space.bilibili.com/328578742" width="600px" height="580px">
 <p>你的浏览器可能不支持iframe</p>
 </iframe>
