@@ -31,20 +31,28 @@ function no()
 	console.log('ButtonClicked.');
 }
 </script>
+<script>
+$(document).ready(function(){
+  $("#has").click(function(){
+    $(".nounderline").toggle(500);
+  });
+});
+</script>
 <style type="text/css">
 .nounderline{text-decoration:none;}
 </style>
 </head>
 <body background="bg.jpg" bgproperties="fixed" vlink="#ffffff" alink="#ffffff" style ="background-repeat:no-repeat;" onload="sayhello()">
 <nobr>
+<b color="#f00000" id="has">显示/隐藏→&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
 <a href="index.html" class="nounderline"><b>主页&nbsp;&nbsp;</b></a>
 <a href="whoami.html" class="nounderline"><b>我&nbsp;是&nbsp;谁</b></a>
 <a href="https://space.bilibili.com/328578742" target="_blank" class="nounderline"><b>我的B站首页&nbsp;&nbsp;</b></a>
 <a href="https://github.com/QLchedan/" target="_blank" class="nounderline"><b>我的GitHub&nbsp;&nbsp;</b></a>
 <a href="fujiao.html" class="nounderline"><b>fujao</b></a>
-<font color="ffffff"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;千里扯淡的个人主页！</b></font>
+<font color="#ffffff" class="nounderline"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;千里扯淡的个人主页！</b></font>
 </nobr>
-<br>
+<br><br><br>
 <b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b>
 <br>
 <b>我的测试环境是Windows10，Edge Beta（Chromium内核），其他浏览器我就不知道了</b>
