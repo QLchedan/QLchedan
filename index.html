@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <title>千里扯淡的个人主页!</title>
 <script src="https://cdn.staticfile.org/jquery/1.8.3/jquery.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
 </script>
 <script>
 function sayhello()
@@ -32,27 +36,41 @@ function no()
 }
 </script>
 <script>
-$(document).ready(function(){
-  $("#has").click(function(){
-    $(".nounderline").toggle(500);
-  });
-});
+$(document).ready(function() {
+    $(document).foundation();
+})
 </script>
 <style type="text/css">
-.nounderline{text-decoration:none;}
+.back{
+  background:url(bg.jpg) no-repeat;
+  margin:auto;
+  width:auto;
+  height:auto;
+}
+.but{
+	width:225px;
+	height:52px;
+}
 </style>
 </head>
-<body background="bg.jpg" bgproperties="fixed" vlink="#ffffff" alink="#ffffff" style ="background-repeat:no-repeat;" onload="sayhello()">
-<nobr>
-<b color="#f00000" id="has">显示/隐藏→&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
-<a href="index.html" class="nounderline"><b>主页&nbsp;&nbsp;</b></a>
-<a href="whoami.html" class="nounderline"><b>我&nbsp;是&nbsp;谁</b></a>
-<a href="https://space.bilibili.com/328578742" target="_blank" class="nounderline"><b>我的B站首页&nbsp;&nbsp;</b></a>
-<a href="https://github.com/QLchedan/" target="_blank" class="nounderline"><b>我的GitHub&nbsp;&nbsp;</b></a>
-<a href="fujiao.html" class="nounderline"><b>fujao</b></a>
-<font color="#ffffff" class="nounderline"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;千里扯淡的个人主页！</b></font>
-</nobr>
-<br><br><br>
+<body background="bg.jpg" bgproperties="fixed" style ="background-repeat:no-repeat;" onload="sayhello()">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h4><a href="#">千里扯淡的主页</a></h4>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="left">
+      <li class="active"><a href="index.html">主页</a></li>
+      <li><a href="whoami.html">我是谁</a></li>
+      <li><a href="fujiao.html">fujao</a></li>
+      <li><a href="https://space.bilibili.com/328578742">我的B站首页</a></li>
+	  <li><a href="https://github.com/QLchedan/">我的GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="back">
 <b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b>
 <br>
 <b>我的测试环境是Windows10，Edge Beta（Chromium内核），其他浏览器我就不知道了</b>
@@ -69,13 +87,14 @@ $(document).ready(function(){
 <p>↓</p>
 <p>（给我三连！赶紧的）</p>
 <br><br>
-<button type="button" onclick="yes()">三连了！</button>
-<button type="button" onclick="no()">不三连，给👨爪巴</button>
+<button class="but" type="button" onclick="yes()">三连了！</button>
+<button class="but" type="button" onclick="no()">不三连，给👨爪巴</button>
 <p id="text">233</p>
 <iframe src="https://space.bilibili.com/328578742" width="600px" height="580px">
 <p>你的浏览器可能不支持iframe</p>
 </iframe>
 <br><br><br>
 </center>
+</div>
 </body>
 </html>
