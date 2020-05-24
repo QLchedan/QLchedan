@@ -20,6 +20,10 @@ function sayhello()
 	else if (hour<=13 && hour>=11) {alert('欢迎!中午好！'+' \n'+'当前时间:'+timee);}
 	else if (hour<=10 && hour>=0) {alert('欢迎!早上好！'+' \n'+'当前时间:'+timee);}
 }
+function hid()
+{
+	$("#fk").hide();
+}
 </script>
 <script>
 function yes()
@@ -33,6 +37,14 @@ function no()
 	x=document.getElementById("text");
 	x.innerHTML = "给👨爪巴去三连!ψ(*｀ー´)ψ";
 	console.log('ButtonClicked.');
+}
+function fk()
+{
+	document.getElementById("fk").style.display = "block";
+}
+function fuk()
+{
+	document.getElementById("fk").style.display = "none";
 }
 </script>
 <script>
@@ -51,11 +63,26 @@ $(document).ready(function() {
 .but{
 	width:225px;
 	height:52px;
+	opacity:0.85;
 }
 a:link {color:#FFFFFF;}
 a:visited {color:#FFFFFF;}
 a:hover {color:#FFFFFF;}
 a:active {color:#FFFFFF;}
+.faku{
+	display: none;
+	background-color:#FFFFFF;
+	margin:auto;
+    width:400px;
+    height:200px;
+	position:fixed;
+	right:75px;
+	top:275px;
+	border-style:solid;
+    border-width:1px;
+	opacity:0.75;
+	overflow:scroll;
+}
 </style>
 </head>
 <body background="bg.jpg" style ="background-repeat:no-repeat;" onload="sayhello()">
@@ -77,6 +104,22 @@ a:active {color:#FFFFFF;}
     </ul>
   </section>
 </nav>
+<div style="position: fixed;right:15px;top:495px">
+<button class="button tiny" type="button" onclick="fk()">一些问题的回答</button>
+</div>
+<div id="fk" class="faku">
+<button class="button tiny" type="button" onclick="fuk()">X</button><br>
+<b>Q1:</b>为什么访问极慢？<br>
+<b>A1:</b>别问，问就是没钱整服务器<br>
+<b>Q2:</b>为什么这网站啥都没有？<br>
+<b>A2:</b>技术不行，莫得灵感TAT<br>
+<b>Q3:</b>用啥做的这个网站？<br>
+<b>A3:</b>HTML+foundation+CSS+JavaScript（jquery），notepad++敲代码<br>
+<b>Q4:</b>为什么要做这个网站？<br>
+<b>A4:</b>闲着无聊<br>
+<b>Q4:</b>反馈方式？<br>
+<b>A4:</b>B站私信，回的可能会比较慢但基本都会回的<br>
+</div>
 <div class="back">
 <b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b>
 <br>
