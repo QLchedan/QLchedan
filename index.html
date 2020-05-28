@@ -46,6 +46,10 @@ function fuk()
 {
 	document.getElementById("fk").style.display = "none";
 }
+function enter(){
+    var audio = document.getElementById("enter");
+    audio.play()
+}
 </script>
 <script>
 $(document).ready(function() {
@@ -59,11 +63,6 @@ $(document).ready(function() {
   width:100%;
   height:auto;
   background-attachment:fixed
-}
-.but{
-	width:225px;
-	height:52px;
-	opacity:0.85;
 }
 a:link {color:#FFFFFF;}
 a:visited {color:#FFFFFF;}
@@ -104,11 +103,16 @@ a:active {color:#FFFFFF;}
     </ul>
   </section>
 </nav>
+<audio id='enter'>
+  <source src="brainpower.mp3"  type="audio/mpeg">
+您的浏览器不支持 audio 元素。
+</audio>
 <div style="position: fixed;right:15px;top:495px">
-<button class="button tiny" type="button" onclick="fk()">一些问题的回答</button>
+<button class="button tiny" type="button" onclick="fk()">一些问题的回答</button><br>
+<button class="button tiny" type="button" onclick="enter()">BrainPower!!!!!</button>
 </div>
 <div id="fk" class="faku">
-<button class="button tiny" type="button" onclick="fuk()">X</button><br>
+<button class="button tiny" type="button" onclick="fuk()" style="position:fixed;">X</button><br><br><br>
 <b>Q1:</b>为什么访问极慢？<br>
 <b>A1:</b>别问，问就是没钱整服务器<br>
 <b>Q2:</b>为什么这网站啥都没有？<br>
@@ -136,8 +140,8 @@ a:active {color:#FFFFFF;}
 <p>↓</p>
 <p>（给我三连！赶紧的）</p>
 <br><br>
-<button class="but" type="button" onclick="yes()">三连了！</button>
-<button class="but" type="button" onclick="no()">不三连，给👨爪巴</button>
+<button class="button small" type="button" onclick="yes()">三连了！</button>
+<button class="button small" type="button" onclick="no()">不三连，给👨爪巴</button>
 <p id="text">233</p>
 <iframe src="https://space.bilibili.com/328578742" width="600px" height="580px">
 <p>你的浏览器可能不支持iframe</p>
