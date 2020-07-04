@@ -13,6 +13,10 @@
 $(document).ready(function() {
     $(document).foundation();
 })
+function page(nam)
+{
+	document.getElementById("ts").src=nam;
+}
 </script>
 <style type="text/css">
 .back{
@@ -48,16 +52,26 @@ a:active {color:#FFFFFF;}
   </section>
 </nav>
 <div class="back">
-<p>啊wee改哈鞥嫦娥我刚不疤痕处哈维楚王嗡阿格王朔!111!111</p>
-<p>紫薯布丁 ！！！11！1111</p>
-</div>
-<div style="background:#000000">
-<center>
-<font style="color:#FFFFFF">背景图片来源:<a href="https://h.bilibili.com/27333441">https://h.bilibili.com/27333441</a>&nbsp;侵权删</font>
 <br>
-<font style="color:#FFFFFF">最近一次更新:2020.5</font>
-<br>
-<font style="color:#FFFFFF">暂无友链</font>
-</center>
-</div>
+<nobr>
+	<table>
+		<tr>
+			<div style="box-shadow: 10px 10px 5px #888888;background-color:#000000;width:50%;height:120px;opacity:0.75">
+				<a onclick="page('blog/about.html');"><b>&nbsp;&nbsp;&nbsp;<font size="3">关于这个界面</font></b></a>
+				<br>
+				<font size="75%">2020.7.4</font>
+			</div>
+		</tr>
+		<tr>
+			<div style="box-shadow: 10px 10px 5px #888888;background-color:#000000;width:50%;height:120px;opacity:0.75">
+				<a onclick="page('blog/autotype.html');"><b>&nbsp;&nbsp;&nbsp;<font size="3">自&nbsp;&nbsp;动&nbsp;&nbsp;打&nbsp;&nbsp;字</font></b></a>
+				<br>
+				<font size="75%">2020.7.4</font>
+			</div>
+		</tr>
+	</table>
+	<iframe src="blog/nothing.html" id="ts" align="right" style="overflow:scroll;position:fixed;top:70px;right:0;box-shadow: 10px 10px 5px #888888;background-color:#000000;width:50%;height:100%;opacity:0.75"></iframe>
+</nobr>
+
+
 </body>
