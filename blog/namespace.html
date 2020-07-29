@@ -1,0 +1,33 @@
+<div style="background-color:#000000;color:#FFFFFF">
+<h2>【C++】命名空间有什么用？</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 对于命名空间你们可能只听过下面这段：</p>
+<p><xmp>using namespace std;</xmp></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 那这里面的命名空间（namespace）有什么用呢？首先，
+我们打个老掉牙了的比方：1班有个叫张三（变量）的，2班也有个叫张三（变量）的。全校点名，
+怎么知道是哪个张三？这样肯定就会在前面补充是“1班”还是“2班”。这个班级就相当于一个命名空间，在
+C++中是这样写的：
+</p>
+<p><xmp>命名空间::变量</xmp></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看个栗子：</p>
+<p>
+<xmp>#include <iostream>
+using std::cout;
+namespace MyN
+{
+int a;//在MyN命名空间定义
+int b;
+}
+int main()
+{
+int a=1;//定义变量a=1
+int b=2;//定义变量b=2
+MyN::a=2;
+MyN::b=1;
+cout<<a<<b<<MyN::a<<MyN::b;
+return 0;
+}
+</xmp>
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果：输出1221，变量为MyN::a=2,MyN::b=1,a=1,b=2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(命名空间名可为空，但这只定义了全局变量，没有必要)</p>
+</div>
