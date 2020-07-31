@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>千里扯淡的个人主页!</title>
 <script src="https://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<link media="screen" rel="stylesheet" type="text/css" href="css/jq22.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,24 +89,16 @@ a:active {color:#FFFFFF;}
 </style>
 </head>
 <body background="bg.jpg" style ="background-repeat:no-repeat;" onload="sayhello()">
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h4><a href="#">千里扯淡的主页</a></h4>
-    </li>
-  </ul>
-  <section class="top-bar-section">
-    <ul class="left">
-      <li class="active"><a href="index.html">主页</a></li>
-      <li><a href="whoami.html">我是谁</a></li>
-      <li><a href="fujiao.html">fujao</a></li>
-	  <li><a href="news.html">网站更新信息</a></li>
-      <li><a href="https://space.bilibili.com/328578742">我的B站首页</a></li>
-	  <li><a href="https://github.com/QLchedan/">我的GitHub</a></li>
-	  <li><a href="blog.html">无聊の博客/源码分享</a></li>
+<div id="menu" style="width:100%;">
+    <ul>
+      <li> <a href="index.html" style="font-size:0.5em;color:#6d6868;">主页 </a> </li>
+      <li> <a href="whoami.html" style="font-size:0.5em;color:#6d6868;">我是谁</a> </li>
+      <li> <a href="fujiao.html" style="font-size:0.5em;color:#6d6868;">fujao</a> </li>
+      <li> <a href="https://space.bilibili.com/328578742" style="font-size:0.5em;color:#6d6868;">我的B站首页</a> </li>
+      <li> <a href="https://github.com/QLchedan/" style="font-size:0.5em;color:#6d6868;">我的GitHub</a> </li>
+      <li> <a href="blog.html" style="font-size:0.5em;color:#6d6868;">无聊の博客</a> </li>
     </ul>
-  </section>
-</nav>
+</div>
 <audio id='enter'>
   <source src="https://cdn.jsdelivr.net/gh/QLchedan/QLchedan@master/brainpower.mp3"  type="audio/mpeg">
 您的浏览器不支持 audio 元素。
@@ -126,10 +121,9 @@ a:active {color:#FFFFFF;}
 <b>A4:</b>B站私信，回的可能会比较慢但基本都会回的<br>
 </div>
 <div class="back">
-<b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b>
+<p style="text-align:left;"><b>提示！如果出现排版错乱，请更换浏览器，因为我懒得适配！（凑不要脸 ）</b></p>
+<p style="text-align:left;"><b>我的测试环境是Windows10，Edge Beta（Chromium内核），其他浏览器我就不知道了</b></p>
 <br>
-<b>我的测试环境是Windows10，Edge Beta（Chromium内核），其他浏览器我就不知道了</b>
-<br><br>
 <p>这是B站up千里扯淡的网站！</p>
 <p>我是练习C++两年半的个人练习生....（</p>
 <p>就闲着无聊把这个网站做上了，我HTML水平不怎么样（不过反正比我C#流弊一点）</p>
